@@ -48,6 +48,7 @@ public :
 	{
 		SDL_RenderPresent(_renderer);
 	}
+
 	inline SDL_Renderer* getRenderer() const { return _renderer; }
 	int getWidth() { return _width; }
 	int getHeight() { return _height; }
@@ -90,6 +91,7 @@ private :
 
 private :
 	
+	//default
 	int _width = 1280;
 	int _height = 800;
 

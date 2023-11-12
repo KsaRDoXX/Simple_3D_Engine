@@ -133,7 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="Object3D.cpp" />
     <ClCompile Include="ObjectsController.cpp" />
     <ClCompile Include="SDL_3D_1.cpp" />
     <ClCompile Include="Vector2.cpp" />
@@ -141,7 +141,6 @@
     <ClCompile Include="Vertices.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cube.h" />
     <ClInclude Include="Object3D.h" />
     <ClInclude Include="ObjectsController.h" />
     <ClInclude Include="Vector2.h" />
