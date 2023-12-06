@@ -1,5 +1,6 @@
 #pragma once
 #include "Vector2.h"
+#include <vector>
 class Vector3 
 {
 public :	
@@ -89,5 +90,9 @@ public :
 	{
 		return Vector3(0,0,0);
 	}
+
+	
+	std::vector<Vector3> vectorRepresentation(Vector3 drivingPoint, double scale);
+
 };
 

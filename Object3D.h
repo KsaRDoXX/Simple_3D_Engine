@@ -24,7 +24,6 @@ public:
 	//dlugosc boku
 	double a = 100.0;
 
-
 	std::vector<Vector3> modelSpacePoints3D;
 	std::vector<Vector3> worldSpacePoints3D;
 
@@ -46,7 +45,6 @@ public:
 	double translationZ = 0;
 
 	double DeltaTime = 0.0;
-	double alpha = 0.0001;
 
 	//Physics
 	double speedX = 0.0;
@@ -60,7 +58,6 @@ public:
 	double mass = 10.0;
 
 	//œrednia punktów DisplayPoints3D 
-	//Vector3 massCenter = Vector3(a/2,a/2,a/2);
 	Vector3 massCenter = averagePoint(worldSpacePoints3D);
 
 	//applies rotation to model space points

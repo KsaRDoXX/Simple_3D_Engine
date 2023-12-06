@@ -1,4 +1,4 @@
-#include "ObjectsController.h"
+#include "ObjectsController.h" 
 #include <iostream>
 
 ObjectsController::ObjectsController(std::vector<Object3D> obj) :
@@ -20,7 +20,7 @@ ObjectsController::~ObjectsController()
 void ObjectsController::Gravitation()
 {
 	//F = G * (m1 * m2) / R^2
-	double G = 0.0008;
+	double G = 0.008;
 
 	for (int i = 0; i < objects3D.size(); i++)
 	{

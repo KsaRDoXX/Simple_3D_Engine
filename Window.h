@@ -6,8 +6,6 @@ class Window
 {
 public : 
 	
-	
-
 	Window(int width, int height, std::string name) :
 		_width(width), _height(height), _name(name)
 	{
@@ -35,7 +33,6 @@ public :
 			}
 		}
 	}
-
 
 	void Clear() const
 	{
@@ -77,7 +74,9 @@ private :
 			return 0;
 		}
 
-		_renderer = SDL_CreateRenderer(_window, -1, SDL_RENDERER_ACCELERATED);
+		//_renderer = SDL_CreateRenderer(_window, -1, SDL_RENDERER_ACCELERATED);
+		_renderer = SDL_CreateRenderer(_window, -1, SDL_RENDERER_PRESENTVSYNC);
+		//_renderer = SDL_CreateRenderer(_window, -1, SDL_RENDERER_SOFTWARE);
 
 		if (_renderer == nullptr)
 		{
